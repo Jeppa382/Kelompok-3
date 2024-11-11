@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styleE.css">
+    <title>EXPLORE</title>
+</head>
+<body>
+    
+    <nav>
+        <a class="logo" href="index.html"><i class="fab fa-pinterest"></i></a>
+        <a href="index.html">Home</a>
+        <a href="indexX.html" class="active">Explore</a>
+        <a href="#">Creat</a>
+        <input type="text" class="Search" placeholder="Search">
+        <a href="#" class="icon"><i class="fas fa-bell"></i></a>
+        <a href="#" class="icon"><i class="fas fa-comment-dots"></i></a>
+        <a href="pfp.html"><img src="1.jpg" alt=""></a>
+    </nav>
+    <!--  --><br><br><br><br>
+    <main>
+      <h1><span>I</span><span>n</span><span>s</span><span>p</span><span>i</span><span>r</span><span>e</span><span>d</span></h1>
+
+      <div class="text">
+            <h4>New</h4>
+            <p>11 November 2024</p>
+      </div>
+      <div class="container">
+        <div class="card">
+            <div class="card-img">
+                <img src="5.jpeg" alt="">
+            </div>
+            <div class="card-body">
+                There is a white dog cage design with
+                 a simple and comfortable design. The size is not too big, but 
+                it is still suitable for your dog because it is covered with 
+                carpet and there is also a teepee tent as a bed.
+                 </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="6.jpeg"   alt="">
+            </div>
+            <div class="card-body">
+                Wooden dog houses because wood is easy to shape, 
+                wooden dog cages have a unique model. Not only that, 
+                the natural color of the wood makes the cage design look so timeless.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img">
+                <img src="7.jpeg"   alt="">
+            </div>
+            <div class="card-body">
+                The dog house design is simple and resembles a real house. 
+                The shape is simple and minimalist. So it can be placed at home.
+                 How? Have you found a dog house design that is suitable for your little one?
+            </div>
+        </div>
+    </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        gsap.from("h1 span", {
+            y: 10,
+            opacity: 0,
+            delay: 0.8,
+            stagger: 0.2
+        })
+        gsap.from(".container", {
+            y: "200%",
+            opacity: 0,
+            duration: 1,
+            delay: 1
+        })
+        gsasp.from(".card:nth-child(1)", {
+            x: -200,
+            opacity: 0,
+            delay: 2
+        })
+        gsasp.from(".card:nth-child(3)", {
+            x: 200,
+            opacity: 0,
+            delay: 2
+        })
+        gsasp.from(".card:nth-child(2)", {
+            x: 100,
+            opacity: 0,
+            delay: 2
+        })
+    </script>
+</body>
+
+</html>
